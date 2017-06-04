@@ -41,13 +41,13 @@ function getWatsonsToken(){
 
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_URL, $urlSTT);
-    curl_setopt($ch, CURLOPT_USERPWD, "819257f4-61f7-41d0-9370-c631d85dd8fe:WxoxHRMZChgS");
+    curl_setopt($ch, CURLOPT_USERPWD, "563ddaf9-7fa2-4359-ab31-cc67a1c6f7ef:aziPJxHUItbD");
 
     $tokens[0] = curl_exec($ch);
 
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_URL, $urlTTS);
-    curl_setopt($ch, CURLOPT_USERPWD, "94a0c896-6bff-4781-8e9a-81c397b13081:SO7PejmbaAmr");
+    curl_setopt($ch, CURLOPT_USERPWD, "f2ef0e4b-88b4-4481-985d-3158499f7b30:KrYxhtn15tN0");
 
     $tokens[1] = curl_exec($ch);
 
@@ -148,10 +148,10 @@ function addSuggestion() {
 }
 
 function getConnection() {
- $dbhost="wellsp00.mysql.ukraine.com.ua";
- $dbuser="wellsp00_natasha";
- $dbpass="Qwerty123";
- $dbname="wellsp00_db";
+ $dbhost="us-cdbr-iron-east-03.cleardb.net";
+ $dbuser="b2c82313f7ed4b";
+ $dbpass="69a241e0";
+ $dbname="ad_4175a4277b4b4fb";
  $dbh = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8", $dbuser, $dbpass);
 
  $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
