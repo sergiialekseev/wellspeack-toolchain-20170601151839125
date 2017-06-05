@@ -153,9 +153,9 @@ function getConnection() {
  $dbpass="69a241e0";
  $dbname="ad_4175a4277b4b4fb";
  $dbh = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8", $dbuser, $dbpass , array(
-    PDO::MYSQL_ATTR_SSL_KEY    =>'/mysql/ssl/client-key.pem',
-    PDO::MYSQL_ATTR_SSL_CERT=>'/mysql/ssl/client-cert.pem',
-    PDO::MYSQL_ATTR_SSL_CA    =>'/mysql/ssl/ca-cert.pem'
+    PDO::MYSQL_ATTR_SSL_KEY=>'client-key.pem',
+    PDO::MYSQL_ATTR_SSL_CERT=>'client-cert.pem',
+    PDO::MYSQL_ATTR_SSL_CA=>'ca-cert.pem'
     )
  );
 
